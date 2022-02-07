@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">
+        <h3 class="mb-4">{{title}}</h3>
+
+        <div>
+            <div class="mb-3">
+                <label for="txtURL" class="form-label">Provide remote URL</label>
+                <input id="txtURL" type="text" class="form-control" placeholder="Enter URL" value="{{url}}">
+            </div>
+            <div class="mb-3">
+                <button id="btnFetch" class="btn btn-primary"><i class="lni lni-bolt-alt"></i> Fetch</button>
+                <button id="btnReset" class="btn btn-secondary"><i class="lni lni-spinner-arrow"></i> Reset</button>
+            </div>
+
+            <div id="dvAlert" class="alert alert-info" role="alert" hidden>
+                <div class="spinner-border spinner-border-sm text-info" role="status"></div>
+                Loading please wait...
+            </div>
+
+            <div id="dvResponse" class="bg-light rounded p-4" hidden>
+                <small id="spStatus" class="mb-2 fw-bold d-block"></small>
+                <pre style="max-height: 400px;"><code id="cdResponse"></code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/js/app.js"></script>
